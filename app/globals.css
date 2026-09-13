@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root { --ink: #17241d; --paper: #f6f2e9; --muted: #52705c; --accent: #a95132; }
+* { box-sizing: border-box; }
+html { min-height: 100%; background: var(--ink); }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; }
+.project-placeholder { display: grid; min-height: 100svh; place-content: center; gap: 1.25rem; padding: 2rem; }
+.project-placeholder h1 { max-width: 12ch; margin: 0; font-family: Georgia, serif; font-size: clamp(3rem, 8vw, 7rem); line-height: .9; letter-spacing: -.06em; }
+.project-placeholder p { max-width: 38rem; margin: 0; color: var(--muted); line-height: 1.7; }
+.project-placeholder .eyebrow { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.project-placeholder .status { padding-top: 1rem; border-top: 1px solid rgba(23,36,29,.25); font-size: .85rem; }
