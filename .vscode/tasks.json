@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start Skifjelds Håndverk",
+      "label": "Start MLC Eiendomsfornying",
       "type": "npm",
       "script": "dev",
       "isBackground": true,
@@ -10,7 +10,7 @@
       "group": { "kind": "build", "isDefault": true }
     },
     {
-      "label": "Bygg Skifjelds Håndverk",
+      "label": "Bygg MLC Eiendomsfornying",
       "type": "npm",
       "script": "build",
       "problemMatcher": []

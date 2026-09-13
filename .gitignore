@@ -23,7 +23,11 @@
 Thumbs.db
 *.pem
 *.tar.gz
-/.idea/
+# Share only portable IntelliJ project settings.
+/.idea/*
+!/.idea/modules.xml
+!/.idea/mlc-eiendomsfornying.iml
+!/.idea/vcs.xml
 
 # Internal project documentation (kept locally, not shared with the customer)
 /README.md

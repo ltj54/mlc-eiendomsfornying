@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../Hearts-IntelliJ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Shape-Drop-IntelliJ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../casa-latina-trondheim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../idsoe-radgivning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../idsoe-radgivning/publisering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../ltj-production" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../minde-momentum" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../nyfirmasjekk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../restructuring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../samlivsbrudd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../samlivsbrudd-legal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../samlivsbrudd-twa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../sammen-for-tromsos-barn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../senja-explorer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../skifjelds-handverk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../varneth-management-ness" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../zagros-forlag" vcs="Git" />
+  </component>
+</project>

@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Skifjelds Håndverk: utvikling",
+      "name": "MLC Eiendomsfornying: utvikling",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
