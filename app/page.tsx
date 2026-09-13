@@ -1,10 +1,35 @@
+import { ContactForm } from "./contact-form";
+
+const services = [
+  ["01", "Takvask & mosefjerning", "Fjerning av mose og rengjøring av tak. Ta kontakt, så avklarer vi hva som passer for ditt tak.", "Tak"],
+  ["02", "Fasadevask", "Vask av husets fasade for å fjerne smuss og grønske og gi utsiden et renere uttrykk.", "Fasade"],
+  ["03", "Takrenner", "Rens og vedlikehold av takrenner. Vi hjelper deg med å få bort løv og annet som samler seg.", "Vedlikehold"],
+  ["04", "Terrasser", "Vask og vedlikehold av terrassen, slik at uteplassen er klar for nye dager utendørs.", "Uteplass"],
+  ["05", "Belegningsstein", "Rengjøring og fornying av belegningsstein på gårdsplassen, i gangstien og rundt huset.", "Stein"],
+  ["06", "Klargjøring før salg", "Gi eiendommen et ryddig førsteinntrykk før fotografering og visning. Vi avtaler hva som bør gjøres.", "Eiendom"],
+];
+
 export default function Home() {
-  return (
-    <main className="project-placeholder">
-      <p className="eyebrow">MLC Eiendomsfornying Leszczynski</p>
-      <h1>Ny nettside under utvikling</h1>
-      <p>Dette er et rent arbeidsprosjekt for en enkel og profesjonell énside for kunder i Vestfold.</p>
-      <p className="status">Kravspesifikasjon og innhold avklares før design og publisering.</p>
+  return <>
+    <a className="skip-link" href="#innhold">Hopp til innhold</a>
+    <div className="preview-bar">Designforslag · Bilder og tekst avklares med Mariusz før publisering</div>
+    <header id="topp" className="site-header wrap">
+      <a className="brand" href="#topp" aria-label="MLC Eiendomsfornying – til toppen"><span className="brand-mark">MLC<span>↗</span></span><span className="brand-name">EIENDOMSFORNYING<small>LESZCZYNSKI</small></span></a>
+      <nav aria-label="Hovedmeny"><a href="#tjenester">Tjenester</a><a href="#arbeid">Før & etter</a><a href="#om">Om MLC</a></nav>
+      <a className="header-contact" href="tel:+4748610783">486 10 783 <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="innhold">
+      <section className="hero wrap" aria-labelledby="hero-title">
+        <div className="hero-copy"><p className="eyebrow"><span className="dot" /> UTVENDIG VEDLIKEHOLD I VESTFOLD</p><h1 id="hero-title">Et nytt løft.<br />For huset.<br /><em>For uteplassen.</em></h1><p className="hero-intro">Tak, fasade og uteområder trenger litt omtanke. MLC Eiendomsfornying hjelper deg med vask og vedlikehold av eiendommen din.</p><div className="hero-actions"><ContactForm className="button button-dark" label="Be om et tilbud" /><a className="text-link" href="tel:+4748610783">Ring Mariusz <span aria-hidden="true">↗</span></a></div><p className="hero-footnote">Fortell hva du ønsker hjelp med. Vi tar det derfra.</p></div>
+        <div className="hero-visual" role="img" aria-label="Illustrert bildeplass som skal erstattes med et av MLC sine arbeidsbilder"><div className="visual-top"><span>PLASS TIL ET EKTE ARBEIDSBILDE</span><span>01 / MLC</span></div><div className="architectural-art" aria-hidden="true"><div className="art-sun" /><div className="art-house"><div className="art-window" /><div className="art-door" /></div><div className="art-path" /></div><div className="visual-caption"><p>Små detaljer.<br /><em>Stor forskjell.</em></p><span className="round-arrow" aria-hidden="true">↗</span></div><div className="visual-note">Illustrasjon · erstattes med Mariusz sitt eget bilde</div></div>
+      </section>
+      <div className="service-strip"><div className="wrap"><span>Tak & fasade</span><span aria-hidden="true">✳</span><span>Terrasse & belegningsstein</span><span aria-hidden="true">✳</span><span>Et godt førsteinntrykk</span></div></div>
+      <section id="tjenester" className="section wrap" aria-labelledby="services-title"><div className="section-heading"><div><p className="eyebrow">01 / DETTE HJELPER VI DEG MED</p><h2 id="services-title">Ta vare på det<br />du allerede har.</h2></div><p>Fra taket til gårdsplassen. Velg det du trenger hjelp med, så finner vi et passende omfang sammen.</p></div><div className="services-grid">{services.map(([number, title, description, tag]) => <article className="service" key={number}><div className="service-top"><span>{number}</span><span className="service-tag">{tag}</span></div><h3>{title}</h3><p>{description}</p><a href="#kontakt" aria-label={`Ta kontakt om ${title.toLowerCase()}`}>La oss se på jobben <span aria-hidden="true">↗</span></a></article>)}</div></section>
+      <section id="arbeid" className="work-section"><div className="wrap section"><div className="section-heading"><div><p className="eyebrow">02 / FORSKJELLEN LIGGER I DETALJENE</p><h2>La resultatene<br />snakke for seg.</h2></div><p>Her vil vi vise før- og etterbilder fra MLC sine egne oppdrag. Bildene kommer fra Mariusz.</p></div><div className="comparison"><div className="photo-placeholder before"><span className="photo-label">Før</span><div><span className="placeholder-symbol" aria-hidden="true">＋</span><p>Utgangspunktet</p><small>Plass til eget førbilde</small></div></div><div className="photo-placeholder after"><span className="photo-label">Etter</span><div><span className="placeholder-symbol" aria-hidden="true">＋</span><p>Et nytt uttrykk</p><small>Plass til eget etterbilde</small></div></div></div><div className="comparison-caption"><span>Et oppdrag. To perspektiver.</span><span>Dette er merkede bildeplasser, ikke utførte oppdrag.</span></div></div></section>
+      <section id="om" className="about-section section wrap"><div className="about-card"><span className="eyebrow">MLC / VESTFOLD</span><div className="monogram">M<i>L</i>C<span>.</span></div><p>Utvendig vedlikehold.<br />Personlig kontakt.</p></div><div className="about-copy"><p className="eyebrow">03 / MENNESKET BAK MLC</p><h2>Hei, jeg er<br /><em>Mariusz.</em></h2><p>Jeg driver MLC Eiendomsfornying Leszczynski. Vi hjelper kunder i Vestfold med utvendig vask, vedlikehold og fornying av eiendom.</p><p>Trenger taket en vask, terrassen litt omtanke eller eiendommen en oppfriskning før salg? Ta kontakt og fortell om det du ønsker å få gjort.</p><a className="text-link" href="tel:+4748610783">Slå på tråden <span aria-hidden="true">↗</span></a></div></section>
+      <section className="process-section wrap"><p className="eyebrow">FRA FØRSTE KONTAKT TIL AVTALT JOBB</p><div className="process-grid"><div><span>01</span><h3>Fortell om eiendommen</h3><p>Ring eller send en e-post med hva du trenger hjelp til og hvor eiendommen ligger.</p></div><div><span>02</span><h3>Vi avklarer oppdraget</h3><p>Sammen går vi gjennom behovet og avtaler omfang, pris og tidspunkt.</p></div><div><span>03</span><h3>Vi gjør den avtalte jobben</h3><p>Arbeidet utføres med utgangspunkt i det vi har blitt enige om.</p></div></div></section>
+      <section id="kontakt" className="contact-section"><div className="wrap contact-inner"><div><p className="eyebrow">SKAL VI TA EN PRAT?</p><h2>Hva kan vi<br /><em>gi et løft?</em></h2><p>Fortell litt om jobben og hvor i Vestfold du holder til.</p><ContactForm className="button button-light" label="Skriv en forespørsel" /></div><div className="contact-details"><a href="tel:+4748610783"><span>RING MARIUSZ</span><strong>486 10 783</strong><b aria-hidden="true">↗</b></a><a href="mailto:mkrenpro@gmail.com"><span>SEND EN E-POST</span><strong>mkrenpro@gmail.com</strong><b aria-hidden="true">↗</b></a><div><span>ARBEIDSOMRÅDE</span><p>Vi jobber primært i Vestfold.</p></div></div></div></section>
     </main>
-  );
+    <footer className="wrap site-footer"><div><strong>MLC Eiendomsfornying Leszczynski</strong><span>Org.nr. 938 381 631</span></div><span>Tak · Fasade · Uteområder</span><a href="#topp">Til toppen ↑</a></footer>
+  </>;
 }
