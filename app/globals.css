@@ -48,6 +48,19 @@ nav a:hover { text-decoration: underline; }
 .photos-note { border-left: 3px solid #bdc7b3; padding: 4px 0 4px 22px; margin-bottom: 60px; }
 .photos-note h2 { font-size: 18px; margin-bottom: 9px; }
 .photos-note p { font-size: 14px; }
+.section-intro { display: grid; grid-template-columns: 1.25fr 1fr; gap: 70px; align-items: end; margin-bottom: 32px; }
+.section-intro > p { max-width: 42ch; font-size: 15px; }
+.project-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.project-case { border: 1px solid var(--line); background: #f1f3ec; }
+.case-label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 15px 17px; border-bottom: 1px solid var(--line); }
+.case-label strong { font-size: 16px; font-weight: 550; }
+.case-label span { color: var(--muted); font-size: 12px; }
+.case-images { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px; }
+.image-slot { min-height: 185px; display: grid; align-content: center; justify-items: center; gap: 5px; background: #dfe3d8; color: #65715f; text-align: center; }
+.image-slot.after { background: #cbd7c2; }
+.image-slot span { border: 1px solid #94a18c; border-radius: 99px; padding: 3px 9px; font-size: 10px; color: var(--ink); }
+.image-slot p { font-size: 12px; color: #687565; }
+.editor-note { margin-top: 15px; font-size: 12px; color: var(--muted); }
 .contact { background: var(--ink); color: white; }
 .contact-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 70px; padding-block: 55px; align-items: center; }
 .contact p { color: #dae0d6; margin-top: 18px; max-width: 47ch; }
@@ -75,6 +88,9 @@ footer span { display: block; color: var(--muted); margin-top: 5px; }
   .section { padding-block: 36px; }
   .about { gap: 22px; }
   .photos-note { margin-bottom: 40px; }
+  .section-intro { grid-template-columns: 1fr; gap: 18px; }
+  .project-gallery { grid-template-columns: 1fr; gap: 14px; }
+  .image-slot { min-height: 150px; }
   .contact-inner { padding-block: 38px; gap: 28px; }
   .contact-links a { font-size: 20px; }
   footer { align-items: flex-start; }

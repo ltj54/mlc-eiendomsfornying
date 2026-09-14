@@ -55,9 +55,14 @@ export default function Home() {
             <p>Du kan kontakte Mariusz direkte på telefon eller e-post. Beskriv gjerne hva som skal gjøres, og hvor eiendommen ligger.</p>
           </div>
         </section>
-        <section className="photos-note wrap" aria-labelledby="photos-title">
-          <h2 id="photos-title">Bilder fra arbeidet</h2>
-          <p>I den ferdige siden legger vi inn Mariusz sine før- og etterbilder fra utførte oppdrag.</p>
+        <section id="arbeid" className="work section wrap" aria-labelledby="photos-title">
+          <div className="section-intro"><div><p className="eyebrow">FØR OG ETTER</p><h2 id="photos-title">Slik kan resultatene vises.</h2></div><p>Her legger vi inn Mariusz sine egne bilder fra utførte oppdrag. Hvert oppdrag får et enkelt før- og etterbilde.</p></div>
+          <div className="project-gallery">
+            <article className="project-case"><div className="case-label"><strong>Takvask</strong><span>Før / etter</span></div><div className="case-images"><div className="image-slot"><span>Før</span><p>Legg inn bilde</p></div><div className="image-slot after"><span>Etter</span><p>Legg inn bilde</p></div></div></article>
+            <article className="project-case"><div className="case-label"><strong>Fasadevask</strong><span>Før / etter</span></div><div className="case-images"><div className="image-slot"><span>Før</span><p>Legg inn bilde</p></div><div className="image-slot after"><span>Etter</span><p>Legg inn bilde</p></div></div></article>
+            <article className="project-case"><div className="case-label"><strong>Uteplass</strong><span>Før / etter</span></div><div className="case-images"><div className="image-slot"><span>Før</span><p>Legg inn bilde</p></div><div className="image-slot after"><span>Etter</span><p>Legg inn bilde</p></div></div></article>
+          </div>
+          <p className="editor-note">Bildeplassene byttes ut med egne arbeidsbilder når Mariusz sender dem.</p>
         </section>
         <section id="kontakt" className="contact">
           <div className="wrap contact-inner">
