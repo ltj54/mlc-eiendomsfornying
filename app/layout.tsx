@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/newsreader/wght.css";
 import "@fontsource-variable/work-sans/wght.css";
 import "./globals.css";
 
